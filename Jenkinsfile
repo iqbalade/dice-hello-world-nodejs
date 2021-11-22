@@ -22,7 +22,7 @@ pipeline {
 
        steps{
          sh 'docker container run -p 8001:8080 --name node -d devadeel/test-node-app'
-        #sh 'curl -I http://localhost:8001'
+       
 
 }
 }
