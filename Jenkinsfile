@@ -21,6 +21,7 @@ pipeline {
     stage ('Test'){
 
        steps{
+           sh 'docker containber stop node'
            sh 'docker container rm node'
          sh 'docker container run -p 8001:8080 --name node -d devadeel/test-node-app'
        
